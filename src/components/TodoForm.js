@@ -14,7 +14,6 @@ export const TodoForm = ({addTodo,todos, edit, editTodoValue,setValue,value, set
       };
 
     const editSubmit = (e) => {
-      console.log(todos)
       let today = new Date();
         let day = today.getDate();
         let month = today.getMonth() + 1; // Months are zero-based, so we add 1
