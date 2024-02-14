@@ -23,13 +23,14 @@ body {
 }
 
 h1 {
+  text-align: center;
   color: #8758ff;
   margin-bottom: 0.5rem;
   font-size: 1.75rem;
 }
 
 .TodoWrapper {
-  width: 40%;
+  width: fit-content;
   background: white;
   margin-top: 1rem;
   padding: 2rem;
@@ -56,7 +57,7 @@ h1 {
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  width: 300px;
+  width: 80%;
   color: #8758ff;
 }
 
@@ -135,3 +136,38 @@ h1 {
   cursor: pointer;
 }
  
+@media (max-width:370px) {
+  .Todo{
+    display: grid;
+    gap: 0.7rem;
+    justify-content: center;
+  }
+  .TodoForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .TodoWrapper{
+    width: 80%;
+  }
+  .todo-input {
+    width: 150px;
+  }
+
+}
+
+@media (min-width:371px) and (max-width:800px) {
+  .TodoWrapper{
+    width: 80%;
+  }
+
+}
+
+@media (min-width:801px) {
+  .TodoWrapper{
+    width: 650px;
+  }
+
+}
